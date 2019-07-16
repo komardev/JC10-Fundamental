@@ -65,14 +65,91 @@ var hari = 'Senin'
 // console.log(hasil)
 
 // console.log(typeof(nama))
-// https://github.com/rochafialvin/JC10-Fundamental
 
 
-var teks = 'Halo$Dunia$Selamat$Sore'
+
+// var teks = 'Halo$Dunia$Selamat$Sore'
 
 // console.log(teks.length) // Jumlah karakter dari string
 // console.log(teks.indexOf('Dunia')) // Menemukan index / posisi
 // console.log(teks.indexOf('a'))
 // console.log(teks.substr(5,4)); // mengambil dari index 5 sebanyak 4 karakter
 // console.log(teks.slice(5, 9)) // mengambil dari index 5 sampai index ke 8
-console.log(teks.split('a')) // Split berdasarkan karakter tertentu
+// console.log(teks.split('a')) // Split berdasarkan karakter tertentu
+
+
+
+
+
+// var x = 'halo'
+// var y = 'DUNIA'
+// var z = 'Hai, sudah sampai pantai nih'
+// var angka = 1234
+// console.log(angka)
+// console.log(typeof(angka));
+
+// Mengubah tipe data number menjadi string
+// console.log(angka.toString())
+
+// Hanya mengganti 'ai' yang pertama ditemukan
+// console.log(z.replace('ai', 'ia'))
+// Mengganti semua 'ai' yang ada
+// console.log(z.replace(/ai/g, 'ia'));
+// // Mengubah data ke huruf kapital
+// console.log(x.toUpperCase());
+// // Mengubah data ke huruf kecil
+// console.log(y.toLowerCase())
+
+var angka = '2019'
+var teks = 'Halo Dunia'
+
+// Tipe data string
+// console.log(angka);
+
+// Mengubah string ke integer
+var hasilAngka = parseInt(angka) // Number
+var hasilTeks = parseInt(teks) // NaN (Not a Number)
+
+// Tipe data number
+// console.log(hasilAngka)
+// console.log(hasilTeks)
+// console.log(typeof(hasilTeks))
+// Tipe data 'angka' tidak berubah
+// console.log(angka);
+
+
+// camelCase
+var purwadhikaStartupAndCodingSchool
+
+var purwadhika_stratup_and_coding_school
+
+var usia = 29
+var usiaString = '30'
+var umurString = '32'
+var namaDepan = 'Brew'
+var namaBelakang = 'Master'
+
+console.log(usia + usiaString)
+console.log(umurString + usiaString)
+console.log(usia + usia)
+
+// console.log(namaDepan + namaBelakang)
+// console.log(namaDepan + usia)
+// console.log(namaDepan + ' ' +  usia)
+// console.log(namaDepan + ' ' + namaBelakang)
+
+// https://github.com/rochafialvin/JC10-Fundamental
+
+
+
+
+
+
+
+
+
+
+
+
+
+
