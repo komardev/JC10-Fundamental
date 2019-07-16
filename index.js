@@ -56,12 +56,23 @@ var hari = 'Senin'
 // var _underscore
 // var $dollarsign
 
-var nama = 'Zondo' // string
-var tanggal = 22 // number
-var single = true
-var profesi
+// var nama = 'Zondo' // string
+// var tanggal = 22 // number
+// var single = true
+// var profesi
 
-var hasil = typeof(profesi)
-console.log(hasil)
+// var hasil = typeof(profesi)
+// console.log(hasil)
 
-console.log(typeof(nama))
+// console.log(typeof(nama))
+// https://github.com/rochafialvin/JC10-Fundamental
+
+
+var teks = 'Halo$Dunia$Selamat$Sore'
+
+// console.log(teks.length) // Jumlah karakter dari string
+// console.log(teks.indexOf('Dunia')) // Menemukan index / posisi
+// console.log(teks.indexOf('a'))
+// console.log(teks.substr(5,4)); // mengambil dari index 5 sebanyak 4 karakter
+// console.log(teks.slice(5, 9)) // mengambil dari index 5 sampai index ke 8
+console.log(teks.split('a')) // Split berdasarkan karakter tertentu
