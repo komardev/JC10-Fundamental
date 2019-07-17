@@ -260,21 +260,55 @@ var hari = 'Senin'
 // console.log(random10);
 
 // Random Dadu ( 1 - 6 )
-var randomDice = Math.random() * 6 // 0, .. - 5, ..
-console.log(randomDice);
+// var randomDice = Math.random() * 6 // 0, .. - 5, ..
+// console.log(randomDice);
 
 // Dibulatkan ke bawah // 0 - 5 
-var hasilDice = Math.floor(randomDice)
+// var hasilDice = Math.floor(randomDice)
 // Dijumlahkan dengan satu 
-console.log(hasilDice + 1);
+// console.log(hasilDice + 1);
 
 // 0, - 5,
-var randomDice = Math.random() * 6 
-console.log(randomDice);
+// var randomDice = Math.random() * 6 
+// console.log(randomDice);
 
 // 1 - 6
-var hasilDice = Math.ceil(randomDice) 
-console.log(hasilDice);
+// var hasilDice = Math.ceil(randomDice) 
+// console.log(hasilDice);
+
+// Basic Date Object
+
+var waktu = new Date()
+
+console.log(waktu.getFullYear());
+// Januari = 0
+console.log(waktu.getMonth());
+console.log(waktu.getDate());
+console.log(waktu.getDay());
+console.log(waktu.getHours());
+console.log(waktu.getMinutes());
+console.log(waktu.getSeconds());
+console.log(waktu.getMilliseconds());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
