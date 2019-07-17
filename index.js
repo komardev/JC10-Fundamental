@@ -150,6 +150,7 @@ var hari = 'Senin'
 // console.log(usiaAndi * usiaBudi)
 // console.log(usiaAndi / usiaBudi)
 // console.log(usiaAndi % usiaBudi)
+// console.log(usiaBudi ** 2) Pangkat dua
 
 // MODULUS
 
@@ -197,21 +198,103 @@ var hari = 'Senin'
 // 28 26 1
 
 
-let numbOne = 9
+// let numbOne = 9
 
-numbOne + 1
+// numbOne + 1
 
-console.log(numbOne);
+// console.log(numbOne);
 
 // Update nilai variable
 // numbOne = numbOne + 5
-numbOne += 5
-numbOne %= 5
+// numbOne += 5
+// numbOne %= 5
 
-console.log(numbOne);
+// console.log(numbOne);
 // Membuat variable dengan nama sama
 // let month
 // let month
+
+// console.log(Math.PI);
+// Absolut, mengubah menjadi bilangan positif
+// console.log(Math.abs(-4.7));
+// Pangkat, 8 pangkat 2
+// console.log(Math.pow(8, 2)); // 8 ** 2
+// Akar dua, akar dua dari 64
+// console.log(Math.sqrt(64));
+// Akar tiga dari 8
+// console.log(Math.cbrt(8));
+
+
+// Round, Ceil & Floor
+
+// Round: Pembulatan matematika
+// Ceil: Pembulatan ke atas
+// Floor: Pembulatan ke bawah
+
+// TEKAN ALT
+// var hasilRound = Math.round(4.7)
+// console.log(hasilRound)
+// let hasilRnd =  Math.round(4.4)
+// console.log(hasilRnd)
+// var hasilCeil =  Math.ceil(4.3)
+// console.log(hasilCeil)
+// let hasilFloor = Math.floor(4.9)
+// console.log(hasilFloor)
+
+
+// Random, Max & Min
+
+// 0 - 0.9
+// var hasil = Math.random()
+// console.log(hasil);
+
+// 0.1 *  10 = 1
+// 0.9 * 10 = 9
+
+// Random 0 - 9
+// var random10 = Math.random() * 10
+// console.log(random10);
+
+// Random 0 - 10
+// var random10 = Math.random() * 11
+// console.log(random10);
+
+// Random Dadu ( 1 - 6 )
+var randomDice = Math.random() * 6 // 0, .. - 5, ..
+console.log(randomDice);
+
+// Dibulatkan ke bawah // 0 - 5 
+var hasilDice = Math.floor(randomDice)
+// Dijumlahkan dengan satu 
+console.log(hasilDice + 1);
+
+// 0, - 5,
+var randomDice = Math.random() * 6 
+console.log(randomDice);
+
+// 1 - 6
+var hasilDice = Math.ceil(randomDice) 
+console.log(hasilDice);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
