@@ -163,25 +163,55 @@ var hari = 'Senin'
 // console.log(4 % 2)
 // console.log(5 % 2)
 
-var angkaPertama = 35
-var angkaKedua = 27
+// var angkaPertama = 35
 
 // Menambah angkaPertama dengan 1
-angkaPertama + 1
+// angkaPertama + 1
 // Menambah angkaPertama dengan 1, dan menggantinkan nilai yg lama
-angkaPertama++
+// angkaPertama++
 // Menambah 1 kemudian di print, tanpa mengganti nilai sebelumnya
-console.log(angkaPertama+1); // 37
- // 36
-angkaPertama = angkaPertama + 1 // 37
-console.log(angkaPertama); // 37
-angkaPertama++ // 38
-angkaPertama++ // 39
+// console.log(angkaPertama+1); // 37
+ 36
+// angkaPertama = angkaPertama + 1 // 37
+// console.log(angkaPertama); // 37
+// angkaPertama++ // 38
+// angkaPertama++ // 39
 
-console.log(angkaPertama  % 2); // 39 % 2 = 1
+// console.log(angkaPertama  % 2); // 39 % 2 = 1
+
+// var angkaKedua = 27
+// angkaKedua-- // 26
+// angkaKedua++ // 27
+// angkaKedua + 1
+// console.log(angkaKedua); // 27
+
+// angkaKedua-- // 26
+// console.log(angkaKedua); // 26
+// angkaKedua = angkaKedua - 1 // 25
+
+// console.log(angkaKedua % 2); // 1
+
+// 27 26 1
+// 28 27 0
+// 26 27 28
+// 28 26 1
 
 
+let numbOne = 9
 
+numbOne + 1
+
+console.log(numbOne);
+
+// Update nilai variable
+// numbOne = numbOne + 5
+numbOne += 5
+numbOne %= 5
+
+console.log(numbOne);
+// Membuat variable dengan nama sama
+// let month
+// let month
 
 
 
