@@ -100,15 +100,15 @@ var hari = 'Senin'
 // // Mengubah data ke huruf kecil
 // console.log(y.toLowerCase())
 
-var angka = '2019'
-var teks = 'Halo Dunia'
+// var angka = '2019'
+// var teks = 'Halo Dunia'
 
 // Tipe data string
 // console.log(angka);
 
 // Mengubah string ke integer
-var hasilAngka = parseInt(angka) // Number
-var hasilTeks = parseInt(teks) // NaN (Not a Number)
+// var hasilAngka = parseInt(angka) // Number
+// var hasilTeks = parseInt(teks) // NaN (Not a Number)
 
 // Tipe data number
 // console.log(hasilAngka)
@@ -117,39 +117,74 @@ var hasilTeks = parseInt(teks) // NaN (Not a Number)
 // Tipe data 'angka' tidak berubah
 // console.log(angka);
 
+// huruf, underscore, $
 
 // camelCase
-var purwadhikaStartupAndCodingSchool
+// var purwadhikaStartupAndCodingSchool
 
-var purwadhika_stratup_and_coding_school
+// var purwadhika_stratup_and_coding_school
 
-var usia = 29
-var usiaString = '30'
-var umurString = '32'
-var namaDepan = 'Brew'
-var namaBelakang = 'Master'
+// var usia = 29
+// var usiaString = '30'
+// var umurString = '32'
+// var namaDepan = 'Brew'
+// var namaBelakang = 'Master'
 
-console.log(usia + usiaString)
-console.log(umurString + usiaString)
-console.log(usia + usia)
+// console.log(usia + usiaString) // usia akan di ubah ke string
+// console.log(umurString + usiaString)
+// console.log(usia + usia) // perhitungn biasa
 
 // console.log(namaDepan + namaBelakang)
 // console.log(namaDepan + usia)
 // console.log(namaDepan + ' ' +  usia)
 // console.log(namaDepan + ' ' + namaBelakang)
 
-// https://github.com/rochafialvin/JC10-Fundamental
+// operator (+ * ..) dan operand (angka yg dihitung)
+
+// var usiaAndi = 40
+// var usiaBudi = 20
+
+// SHIFT + ALT + Arrow bawah 
+// console.log(usiaAndi + usiaBudi)
+// console.log(usiaAndi - usiaBudi)
+// console.log(usiaAndi * usiaBudi)
+// console.log(usiaAndi / usiaBudi)
+// console.log(usiaAndi % usiaBudi)
+
+// MODULUS
+
+// 20 % 5 = 20 dibagi 5, Dapat 4, sisanya 0
+// 23 % 5 = 23 dibagi 5, Dapat 4, sisanya 3
+
+
+// console.log(12343423424 % 2)
+// console.log(2 % 2)
+// console.log(3 % 2)
+// console.log(4 % 2)
+// console.log(5 % 2)
+
+var angkaPertama = 35
+var angkaKedua = 27
+
+// Menambah angkaPertama dengan 1
+angkaPertama + 1
+angkaPertama++
+console.log(angkaPertama+1); // 37
+ // 36
+angkaPertama = angkaPertama + 1 // 37
+console.log(angkaPertama); // 37
+angkaPertama++ // 38
+angkaPertama++ // 39
+
+console.log(angkaPertama  % 2);
+
+// 36 37 1
+// 36 37 39
+// 37 37 1
 
 
 
 
 
 
-
-
-
-
-
-
-
-
+ 
