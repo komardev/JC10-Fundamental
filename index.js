@@ -168,7 +168,9 @@ var angkaKedua = 27
 
 // Menambah angkaPertama dengan 1
 angkaPertama + 1
+// Menambah angkaPertama dengan 1, dan menggantinkan nilai yg lama
 angkaPertama++
+// Menambah 1 kemudian di print, tanpa mengganti nilai sebelumnya
 console.log(angkaPertama+1); // 37
  // 36
 angkaPertama = angkaPertama + 1 // 37
@@ -176,11 +178,8 @@ console.log(angkaPertama); // 37
 angkaPertama++ // 38
 angkaPertama++ // 39
 
-console.log(angkaPertama  % 2);
+console.log(angkaPertama  % 2); // 39 % 2 = 1
 
-// 36 37 1
-// 36 37 39
-// 37 37 1
 
 
 
