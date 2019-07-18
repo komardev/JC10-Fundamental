@@ -77,24 +77,62 @@
 
 //  SOLVE IT 6
 
-var today = new Date()
-var yesterday = new Date()
-var tomorrow = new Date()
+// var today = new Date()
+// var yesterday = new Date()
+// var tomorrow = new Date()
 
-tomorrow.setDate(today.getDate() + 1)
-yesterday.setDate(today.getDate() - 1)
+// tomorrow.setDate(today.getDate() + 1)
+// yesterday.setDate(today.getDate() - 1)
 
-console.log(today);
-console.log(yesterday);
-console.log(tomorrow);
+// console.log(today);
+// console.log(yesterday);
+// console.log(tomorrow);
 
-console.log(
-    'Hari ini: ' + today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear()
-    + '\nHari ini: ' + yesterday.getDate() + '-' + (yesterday.getMonth() + 1) + '-' + yesterday.getFullYear()
-    + '\nHari ini: ' + tomorrow.getDate() + '-' + (tomorrow.getMonth() + 1) + '-' + tomorrow.getFullYear()
-);
+// console.log(
+//     'Hari ini: ' + today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear()
+//     + '\n' +'Kemarin: ' + yesterday.getDate() + '-' + (yesterday.getMonth() + 1) + '-' + yesterday.getFullYear()
+//     + '\n' + 'Besok: ' + tomorrow.getDate() + '-' + (tomorrow.getMonth() + 1) + '-' + tomorrow.getFullYear()
+// );
+
+// SOLVE IT 7 
+
+// var teks1 = 'Abracadabra'
+// Banyak karakter pada sebuah teks / kalimat
+// var panjang1 = teks1.length
+// hilangkan 'a'
+// var teks2 =  teks1.replace(/a/g, '')
+// Banyak karakter setelah di hilangkan
+// var panjang2 = teks2.length
+
+// Cari selisih sebelum dan sesudah
+// var hasil = panjang1 - panjang2
+
+// console.log('Jumlah huruf a = ' + hasil);
+
+// SOLVE IT 8
+
+// var A = 60
+// var B = 40
+// var jarak = 120
+
+// var waktu = jarak / (A + B)
+// var jam = Math.floor(waktu)
+// var menit = (waktu * 60) % 60
+
+// var tabrakan = 9 + jam + ':' + menit
+
+// console.log(tabrakan);
 
 
+// SOLVE IT 9
 
+// 0, - 99,
+var pertama = Math.random() * 100
 
+// 0 - 99
+var nilaiRandom = (Math.floor(pertama))
 
+// 1 - 100
+var final = nilaiRandom + 1
+
+console.log(final);
