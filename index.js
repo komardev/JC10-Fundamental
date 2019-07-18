@@ -278,29 +278,103 @@ var hari = 'Senin'
 
 // Basic Date Object
 
-var waktu = new Date()
+// var waktu = new Date()
 
-console.log(waktu.getFullYear());
+// console.log(waktu.getFullYear());
 // Januari = 0
-console.log(waktu.getMonth());
-console.log(waktu.getDate());
-console.log(waktu.getDay());
-console.log(waktu.getHours());
-console.log(waktu.getMinutes());
-console.log(waktu.getSeconds());
-console.log(waktu.getMilliseconds());
+// console.log(waktu.getMonth());
+// console.log(waktu.getDate());
+// console.log(waktu.getDay());
+// console.log(waktu.getHours());
+// console.log(waktu.getMinutes());
+// console.log(waktu.getSeconds());
+// console.log(waktu.getMilliseconds());
+
+// Logif IF dan SWITCH
+
+// Comparison Operators
+
+// BOOLEAN : true , false
+
+// var usia = 24
+// var string = '25'
+
+// console.log(4 == 4)
+// console.log(4 === 4)
+// Tipe data di abaikan
+// console.log(4 == '4')
+// Tipe data di perhitungkan
+// console.log(4 === '4')
+
+// console.log(usia < string);
+
+
+var benar = 4 < 5 // true
+var salah = 4 > 5 // false
+
+// AND , &&
+// Keduanya TRUE, maka hasilnya TRUE
+// Salah satu FALSE, maka false
+
+// console.log(benar && benar); // true
+// console.log(salah && benar ); // false
+
+// OR , ||
+// Salah satu TRUE, maka hasilnya TRUE
+// Keduanya FALSE, maka FALSE
+
+// console.log(benar || salah) // true
+// console.log(salah || salah) // false
+
+// console.log(!benar); //false
+// console.log(!salah); // true
 
 
 
 
 
+// Jika yang di dalam kurung bernilai true
+// maka yang di dalam kurawal akan di jalankan
+// if(hujan){
+//     pakai payung
+// }
 
+// var umur = 27
+// var ktp = true
+// var sim = false
 
+// if(umur > 18 && ktp && sim){
+//     console.log('Boleh berkendara')
+// } else {
+//     console.log('Belum boleh berkendara')
+// }
 
+// var umur = 'hghg'
 
+// if ( umur < 18){
+//     console.log('Kurang dari 18');
 
+// } else if (umur == 18){
+//     console.log('Pas 18 tahun')
 
+// } else if ( umur > 18 && umur < 25){
+//     console.log('Di antara 18 - 24');
+// }
+// else if (isNaN(umur)){
+//     console.log('Bukan angka');
+// } else {
+//     console.log('Lebih dari 24 tahun');
+// }
 
+var single = true
+
+if(single){
+    console.log('Masih sendiri');
+    
+} else {
+    console.log('Tidak lagi sendiri');
+    
+}
 
 
 

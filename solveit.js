@@ -127,12 +127,12 @@
 // SOLVE IT 9
 
 // 0, - 99,
-var pertama = Math.random() * 100
+// var pertama = Math.random() * 100
 
-// 0 - 99
-var nilaiRandom = (Math.floor(pertama))
+// // 0 - 99
+// var nilaiRandom = (Math.floor(pertama))
 
-// 1 - 100
-var final = nilaiRandom + 1
+// // 1 - 100
+// var final = nilaiRandom + 1
 
-console.log(final);
+// console.log(final);
