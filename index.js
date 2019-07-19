@@ -440,20 +440,20 @@ var hari = 'Senin'
 //         console.log('Lebih dari 24 tahun');    
 // }
 
-var job = 'dosen'
+// var job = 'dosen'
 
-switch(true){
-    // false || true
-    // true
-    case job == 'guru' || job == 'dosen': // true
-        console.log('Mengajar');
-        break;
-    case job == 'driver' || job == 'racer': // false
-        console.log('Menyetir');
-        break;
-    default:
-        console.log('tidak diketahui');    
-}
+// switch(true){
+//     // false || true
+//     // true
+//     case job == 'guru' || job == 'dosen': // true
+//         console.log('Mengajar');
+//         break;
+//     case job == 'driver' || job == 'racer': // false
+//         console.log('Menyetir');
+//         break;
+//     default:
+//         console.log('tidak diketahui');    
+// }
 
 
 
