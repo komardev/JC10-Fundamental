@@ -309,8 +309,8 @@ var hari = 'Senin'
 // console.log(usia < string);
 
 
-var benar = 4 < 5 // true
-var salah = 4 > 5 // false
+// var benar = 4 < 5 // true
+// var salah = 4 > 5 // false
 
 // AND , &&
 // Keduanya TRUE, maka hasilnya TRUE
@@ -326,11 +326,13 @@ var salah = 4 > 5 // false
 // console.log(benar || salah) // true
 // console.log(salah || salah) // false
 
+// NOT, !
+// Lawan dari nilai booleannya
+// !true = false
+// !fals = true
+
 // console.log(!benar); //false
 // console.log(!salah); // true
-
-
-
 
 
 // Jika yang di dalam kurung bernilai true
@@ -343,13 +345,16 @@ var salah = 4 > 5 // false
 // var ktp = true
 // var sim = false
 
-// if(umur > 18 && ktp && sim){
+// true && true && false
+// false && false
+// false
+// if(umur > 18 && ktp && sim){ 
 //     console.log('Boleh berkendara')
 // } else {
 //     console.log('Belum boleh berkendara')
 // }
 
-// var umur = 'hghg'
+// var umur = 25
 
 // if ( umur < 18){
 //     console.log('Kurang dari 18');
@@ -360,26 +365,95 @@ var salah = 4 > 5 // false
 // } else if ( umur > 18 && umur < 25){
 //     console.log('Di antara 18 - 24');
 // }
-// else if (isNaN(umur)){
-//     console.log('Bukan angka');
-// } else {
+// else { // running ketika semua option di atas, false semua
 //     console.log('Lebih dari 24 tahun');
 // }
 
-var single = true
+// var single = true
 
-if(single){
-    console.log('Masih sendiri');
+// if(single){
+//     console.log('Masih sendiri');
     
-} else {
-    console.log('Tidak lagi sendiri');
+// } else {
+//     console.log('Tidak lagi sendiri');
     
+// }
+
+// ' ' dan " "
+// console.log('Don\'t give up');
+// console.log("Don't give up");
+// // dibawah tombol esc
+// console.log(`Dont't give up`);
+
+
+
+//  SWITCH CASE
+
+// var umur = 17
+
+// // true atau false
+// if ( umur < 18){
+//     console.log('Kurang dari 18');
+
+// } else if (umur == 18){
+//     console.log('Pas 18 tahun')
+
+// } else if ( umur > 18 && umur < 25){
+//     console.log('Di antara 18 - 24');
+// }
+// else { // running ketika semua option di atas, false semua
+//     console.log('Lebih dari 24 tahun');
+// }
+
+// var job = 'driver'
+// Menyamakan nilai pada switch condition dengan
+// nilai pada case
+// GURU.toLowerCase() ->> guru
+// switch(job.toLowerCase()){
+//     case 'guru':
+//         console.log('Sedang Mengajar');
+//         // break, agar tidak menjalankan kode pada case di bawahnya
+//         break;
+//     case 'driver':
+//         console.log('Sedang Menyetir');
+//         break;
+//     case 'polisi':
+//         console.log('Sedang Bertugas');
+//         break;
+//     default:
+//         console.log('Tidak di ketahui');
+// }
+
+// var umur = 18
+
+// switch(true){
+//     case umur < 18: // false
+//         console.log('Kurang dari 18');
+//         break;
+//     case umur == 18: // true
+//         console.log('Pas 18 tahun')
+//         break;
+//     case umur > 18 && umur < 25:
+//         console.log('Di antara 18 - 24');
+//         break;
+//     default:
+//         console.log('Lebih dari 24 tahun');    
+// }
+
+var job = 'dosen'
+
+switch(true){
+    // false || true
+    // true
+    case job == 'guru' || job == 'dosen': // true
+        console.log('Mengajar');
+        break;
+    case job == 'driver' || job == 'racer': // false
+        console.log('Menyetir');
+        break;
+    default:
+        console.log('tidak diketahui');    
 }
-
-
-
-
-
 
 
 
