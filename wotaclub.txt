@@ -17,7 +17,7 @@ WOTACLUB
         - Infokan biaya
 
 4. Print biaya yang harus dibayar (console / alert)
-    18 : Gratis
-    19 - 25 : 50.000
+    0 - 18 : Gratis
+    19 - 25 : 50000
     26 - 40 : Gratis
     > 41 : Kasih uang 100000
