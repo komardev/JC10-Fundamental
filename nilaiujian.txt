@@ -8,7 +8,7 @@
 2. Hitung rata2 dari nilai semuanya
 
 3. Penentuan nilai:
-    a. > 85 : A
+    a. >= 85 : A
     b. 84 - 76 : B
     c. 75 - 66 : C
     d. 65 - 50 : D
@@ -20,20 +20,12 @@
 
 4. Print di console:
 
-    B.ing: 40
-    B.Ind: 30
-    Mtk : 60
-    ipa: 50
-
     Nama: Alvin
     Dengan nilai akhir: 45
     Index Nilai : E
     Mohon Maaf, Anda dinyatakan tidak lulus
 
-    B.ing: 90
-    B.Ind: 97
-    Mtk : 80
-    ipa: 78
+    ATAU
 
     Nama: Alvin
     Dengan nilai akhir: 83
