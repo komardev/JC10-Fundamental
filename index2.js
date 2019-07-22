@@ -69,11 +69,7 @@
 //     if(i % 2 == 1){ // ganjil
 //         console.log('Looping: ' + i)
 //     }
-// }
-
-
-
-
+// 
 // angka genap 0 - 10 : 0 2 4 6 8 10
 
 // for(var i = 0; i <= 10; i+=2 ){
@@ -85,5 +81,54 @@
 //         console.log('Looping: ' + i)
 //     }
 // }
+
+// LOOP DRAWING
+//  * * * * *
+// var bintang = ''
+
+// for(var i = 1; i <= 5; i++){
+//     bintang += ' * '
+// }
+
+// console.log(bintang)
+
+// *
+// *
+// *
+// *
+
+// var bintang = ''
+
+// for(var i = 1; i <= 5; i++){
+//     bintang += ' * \n'
+// }
+
+// console.log(bintang)
+
+
+// * * * *
+// * * * *
+// * * * *
+// * * * *
+
+var angka = 5
+var bintang = ''
+
+// looping 'i' untuk menentukan banyak baris
+for(var i = 1; i <= angka; i++){
+
+    // looping 'j' banyak bintang per baris
+    for(var j = 1; j <= angka; j++){
+        bintang += ' * '
+    }
+
+    bintang += '\n'
+
+}
+
+console.log(bintang)
+
+
+
 
 
