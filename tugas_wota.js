@@ -67,7 +67,7 @@ do {
     // Variable penentu pengulangan
     var again
 
-    var status = prompt('Masukkan Status (single / taken / complicated')
+    var status =  prompt('Masukkan Status (single / taken / complicated').toLowerCase()
 
     if(status == 'single'){
         // tidak mengulang
