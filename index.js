@@ -170,7 +170,8 @@ baris tiga
 // Menambah 1 kemudian di print, tanpa mengganti nilai sebelumnya
 // console.log(angkaPertama+1); // 37
 
-// angkaPertama = angkaPertama + 1 // 37
+// angkaPertama = angkaPertama + 2 // 37
+// angkaPertama += 2
 // console.log(angkaPertama); // 37
 // angkaPertama++ // 38
 // angkaPertama++ // 39
