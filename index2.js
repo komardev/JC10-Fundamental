@@ -111,14 +111,37 @@
 // * * * *
 // * * * *
 
-var angka = 5
-var bintang = ''
+// var angka = 5
+// var bintang = ''
+
+// // looping 'i' untuk menentukan banyak baris
+// for(var i = 1; i <= angka; i++){
+
+//     // looping 'j' banyak bintang per baris
+//     for(var j = 1; j <= angka; j++){
+//         bintang += ' * '
+//     }
+
+//     bintang += '\n'
+
+// }
+
+// console.log(bintang)
+
+
+// * 
+// * *
+// * * *
+// * * * *
+
+var angka = 3
+var bintang = ' * \n *  * \n *  *  * \n'
 
 // looping 'i' untuk menentukan banyak baris
 for(var i = 1; i <= angka; i++){
 
     // looping 'j' banyak bintang per baris
-    for(var j = 1; j <= angka; j++){
+    for(var j = 1; j <= i; j++){
         bintang += ' * '
     }
 
@@ -127,8 +150,5 @@ for(var i = 1; i <= angka; i++){
 }
 
 console.log(bintang)
-
-
-
 
 

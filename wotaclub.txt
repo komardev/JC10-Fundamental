@@ -11,3 +11,19 @@ bintang = *  *  * \n *  *  * \n *  *  * \n
 * * *
 * * *
 * * *
+
+
+Segitiga
+
+angka = 3
+i = 4 false
+i <= angka
+
+j = 4 false
+j <= i
+
+bintang = * \n *  * \n *  *  * \n
+
+*
+* *
+* * *
