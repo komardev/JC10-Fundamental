@@ -17,7 +17,7 @@
 // console.log(10);
 
 // WHILE
-var angka = 99
+var angka = 9
 
 // Selama condition bernilai true
 while(angka <= 3){
@@ -30,11 +30,11 @@ while(angka <= 3){
 console.log('Selesai WHILE');
 
 //  DO WHILE
-var nilai = 99
+var nilai = 9
 
 do{
     console.log(nilai);
     nilai++
-}while(nilai <= 3)
+}while(nilai <= 3) // true
 
 console.log('Selesai DO WHILE');

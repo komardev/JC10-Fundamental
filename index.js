@@ -37,7 +37,7 @@ baris tiga
 // VAR VS LET
 
 // Tidak masalah
-var hari = 'Senin'
+// var hari = 'Senin'
 // var hari = 'Selasa'
 // console.log(hari)
 
@@ -76,9 +76,6 @@ var hari = 'Senin'
 // console.log(teks.substr(5,4)); // mengambil dari index 5 sebanyak 4 karakter
 // console.log(teks.slice(5, 9)) // mengambil dari index 5 sampai index ke 8
 // console.log(teks.split('a')) // Split berdasarkan karakter tertentu
-
-
-
 
 
 // var x = 'halo'
@@ -172,7 +169,7 @@ var hari = 'Senin'
 // angkaPertama++
 // Menambah 1 kemudian di print, tanpa mengganti nilai sebelumnya
 // console.log(angkaPertama+1); // 37
- 36
+
 // angkaPertama = angkaPertama + 1 // 37
 // console.log(angkaPertama); // 37
 // angkaPertama++ // 38
@@ -214,7 +211,7 @@ var hari = 'Senin'
 // let month
 // let month
 
-// console.log(Math.PI);
+
 // Absolut, mengubah menjadi bilangan positif
 // console.log(Math.abs(-4.7));
 // Pangkat, 8 pangkat 2
@@ -258,23 +255,6 @@ var hari = 'Senin'
 // Random 0 - 10
 // var random10 = Math.random() * 11
 // console.log(random10);
-
-// Random Dadu ( 1 - 6 )
-// var randomDice = Math.random() * 6 // 0, .. - 5, ..
-// console.log(randomDice);
-
-// Dibulatkan ke bawah // 0 - 5 
-// var hasilDice = Math.floor(randomDice)
-// Dijumlahkan dengan satu 
-// console.log(hasilDice + 1);
-
-// 0, - 5,
-// var randomDice = Math.random() * 6 
-// console.log(randomDice);
-
-// 1 - 6
-// var hasilDice = Math.ceil(randomDice) 
-// console.log(hasilDice);
 
 // Basic Date Object
 
