@@ -27,9 +27,27 @@
 var nama = prompt('Masukkan nama: ')
 var usia = parseInt(prompt('Usia: '))
 
-do {
-    // variable penentu pengulangan
-    var ulang
+// DO WHILE
+// do {
+//     // variable penentu pengulangan
+//     var ulang
+
+//     var level = parseInt(prompt('Level: '))
+
+//     if(level >= 1 && level <= 7){ // level harus 1 - 7
+//         // tidak mengulang
+//         ulang = false
+//     } else {
+//         // mengulang
+//         ulang = true
+//         alert('Mohon masukkan level dari 1 - 7')
+//     }
+
+// } while (ulang); // akan mengulang jika variable 'ulang' bernilai true
+
+// WHILE
+var ulang = true
+while (ulang) {
 
     var level = parseInt(prompt('Level: '))
 
@@ -38,11 +56,11 @@ do {
         ulang = false
     } else {
         // mengulang
-        ulang = true
         alert('Mohon masukkan level dari 1 - 7')
     }
 
-} while (ulang); // akan mengulang jika variable 'ulang' bernilai true
+}
+
 
 
 do {
