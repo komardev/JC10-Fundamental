@@ -57,18 +57,64 @@
 // CALLBACK FUNCTION
 // Function yg di running oleh function lainnya
 
-function satu(x, fn){
-    console.log('Nilai X : ' + x)
-
-    // calling function
-    console.log('Yang masuk ke fn : ' + fn);
-    
-    // return undefined
-}
-
 function dua(){
     console.log('Ini dari function dua')
     // return undefined
 }
 
-satu(43, dua)
+function satu(x, fn){
+    console.log('Nilai X : ' + x)
+
+    // calling function
+    // fn berisi sebuah function
+    fn()
+    
+    // return undefined
+}
+
+// 'dua' tidak memerlukan ()
+// satu(43, dua)
+
+function tiga(q, fn){
+    // q = 5
+    //  fn = function empat
+    console.log('Nilai Q: ' + q);
+
+    // nilai pada 'q' akan masuk ke 'x' milih function empat
+    fn(q)
+    
+}
+
+function empat(x) {
+    console.log(x + ' di kali dua : ' + (x *2))
+}
+
+// tiga(5, empat)
+
+function lima(number, fun){
+    console.log('number kuadrat :' + ( number * number))
+
+    fun()
+}
+
+// lima(5, function() {console.log('Fn tanpa declaration')})
+
+function enam(x, fn) {
+    // x : 9
+    // fn: function tujuh
+    var num1 = 25
+    var num2 = 35
+
+    console.log('Nilai X adalah ' + x)
+
+    fn(num1, num2)
+
+}
+
+function tujuh(y, z){
+    // y : num1
+    // z : num2
+    console.log('Y + Z : ' + ( y + z))
+}
+
+enam(9, tujuh)
