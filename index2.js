@@ -175,29 +175,46 @@
 
 // console.log(bintang)
 
+// var angka = 7
+// var bintang = ''
 
-var angka = 7
-var bintang = ''
+// for(var i = angka; i >= 1; i--){
 
-for(var i = angka; i >= 1; i--){
+//     for(var j = 1; j <= i; j++){
+//         bintang += ' * '
+//     }
 
-    for(var j = 1; j <= i; j++){
-        bintang += ' * '
-    }
-
-    bintang += '\n'
+//     bintang += '\n'
 
 
-}
+// }
 
-for(var i = 2; i <= angka; i++){
+// for(var i = 2; i <= angka; i++){
 
-    for(var j = 1; j <= i; j++){
-        bintang += ' * '
-    }
+//     for(var j = 1; j <= i; j++){
+//         bintang += ' * '
+//     }
 
-    bintang += '\n'
+//     bintang += '\n'
 
-}
+// }
 
-console.log(bintang)
+// console.log(bintang)
+
+
+// var z = "";
+// var n = 9
+
+// for (var i = 0; i < n; i++){
+//     for(var j = 0; j < (n - i- 1);j++){
+//         z += '  '
+//     }
+    
+//     for(var k = 1 ; k <= 2 * i + 1; k++){
+//         z += '* '
+//     }
+
+//     z += '\n'
+// }
+
+// console.log(z);
