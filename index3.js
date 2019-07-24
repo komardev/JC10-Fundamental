@@ -213,15 +213,122 @@
 // console.log(buah[2])
 
 
-var buah = ['Apel', 'Belimbing', 'Ceri']
+// var buah = ['Apel', 'Belimbing', 'Ceri']
 
 // Banyaknya data pada array
-console.log('Banyak data : ' + buah.length);
+// console.log('Banyak data : ' + buah.length);
 
 // Looping sebanyak data yg ada di array
-for(var i = 0; i < buah.length; i++){
-    console.log('Buah ' + buah[i])
-}
+// for(var i = 0; i < buah.length; i++){
+//     console.log('Buah ' + buah[i])
+// }
+
+// Properties & Methods
+
+// TEKAN ALT
+// var hari = ['Senin','Selasa','Rabu','Kamis','Jumat','Sabtu','Minggu']
+
+// var len = hari.length
+// console.log('LENGTH : ' + len);
+
+// var idx = hari.indexOf('Rabu')
+// console.log('INDEXOF RABU : ' + idx);
+
+// var idx2 = hari.indexOf('Sunday')
+// console.log('INDEXOF SUNDAY : ' + idx2);
+
+// var sort = hari.sort()
+// console.log('SORT : ' + sort);
+
+// var rev = hari.reverse()
+// console.log('REVERSE : ' + rev);
+
+// POP & PUSH
+// let buah = ['Jeruk', 'Nanas', 'Banana']
+
+// console.log(buah);
+
+// Menghapus data terakhir
+// buah.pop()
+// console.log(buah);
+
+// Menambahkan data di posisi akhir
+// buah.push('Kiwi')
+// console.log(buah);
+
+// buah.push('Durian', 'Manggis')
+// console.log(buah);
+
+// let buah = ['Jeruk', 'Nanas', 'Banana']
+
+// SHIFT & UNSHIFT
+
+// Mengurangi data di posisi depan
+// buah.shift()
+// console.log(buah);
+
+// Menambah data dari depan
+// buah.unshift('Lemon')
+// console.log(buah);
+
+// buah.unshift('Anggur', 'Buahya')
+// console.log(buah);
+
+
+
+// Menghapus 1 data dimulai dari index 2
+// buah.splice(2,1)
+// console.log(buah);
+
+
+// buah.splice(2, 0, 'Lemon', 'Kiwi')
+// console.log(buah);
+// let buah = [
+//     'Leci','Anggur'
+   
+// ]
+
+// buah.pop()
+
+// buah.splice(1,2, 'Leci' )
+
+// buah.push('Pepaya')
+
+// buah.shift()
+
+// buah.pop()
+
+// // berapa jumlah buah ?
+// console.log(buah.indexOf('Pepaya'));
+
+// MERGING
+
+let nama = ['Reyhan', 'Haniful', 'Donny']
+let nama2 = ['Ifan', 'Lukito', 'Syaiful']
+let nama5 = ['Ilham', 'Aisyah', 'Ayu']
+
+let nama3 = nama.concat(nama2)
+let nama4 = nama2.concat(nama)
+let nama6 = nama.concat(nama2, nama5)
+
+
+console.log(nama3);
+console.log(nama4);
+console.log(nama6);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
