@@ -27,3 +27,44 @@ bintang = * \n *  * \n *  *  * \n
 *
 * *
 * * *
+
+Pangkat(7, 1) = 7
+
+-------------------
+
+Pangkat(7, 2)
+x = x * Pangkat(7,1)
+x = 7 * 7
+x = 49
+
+Pangkat(7, 1)
+
+
+Pangkat(7, 3)
+x = x * Pangkat(7, 2)
+x = 7 * 49
+x = 343
+return 343
+
+
+Pangkat(7, 2)
+x = x * Pangkat(7, 1)
+x = 7 * 7
+x = 49
+return 49
+
+Pangkat(7,1)
+return 7
+
+buah.length = 3
+i = 3
+
+i < buah.length
+
+buah[0] = Apel
+buah[1] = 'Belimbing'
+buah[2] = ceri
+
+
+
+ 

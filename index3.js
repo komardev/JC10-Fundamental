@@ -166,3 +166,81 @@
 
 // console.log(total(4,5))
 // console.log(z)
+
+// function Pangkat(x, y){
+//     // x : 7
+//     // y : 1
+//     if( y == 1){
+//         return x
+//     } else {
+//         return x = x * Pangkat(x, y-1)
+//     }
+// }
+
+// var hasil = Pangkat(7, 1) // 7
+// var hasil = Pangkat(7, 2) // 49
+// var hasil = Pangkat(7, 3)
+
+// console.log(hasil)
+// function sayHello(){
+//     console.log('Hello ...')
+// }
+
+// console.log('Pertama');
+// 3000 ms = 3 detik
+// Function sayHello akan jalan setelah 3 detik
+// var x = setTimeout(sayHello, 3000)
+// Cancel setTimeout
+// clearTimeout(x)
+// console.log('Terakhir');
+// setInterval(sayHello, 1500)
+
+// ARRAY
+
+// var buah1 = 'Apel'
+// var buah2 = 'Belimbing'
+// var buah3 = 'Ceri'
+
+// index dimulai dari 0
+
+
+// console.log(buah);
+// console.log(buah.toString());
+// console.log(buah.join(' dan '));
+
+// console.log(buah[0])
+// console.log(buah[1])
+// console.log(buah[2])
+
+
+var buah = ['Apel', 'Belimbing', 'Ceri']
+
+// Banyaknya data pada array
+console.log('Banyak data : ' + buah.length);
+
+// Looping sebanyak data yg ada di array
+for(var i = 0; i < buah.length; i++){
+    console.log('Buah ' + buah[i])
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
