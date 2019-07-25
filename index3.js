@@ -303,18 +303,18 @@
 
 // MERGING
 
-let nama = ['Reyhan', 'Haniful', 'Donny']
-let nama2 = ['Ifan', 'Lukito', 'Syaiful']
-let nama5 = ['Ilham', 'Aisyah', 'Ayu']
+// let nama = ['Reyhan', 'Haniful', 'Donny']
+// let nama2 = ['Ifan', 'Lukito', 'Syaiful']
+// let nama5 = ['Ilham', 'Aisyah', 'Ayu']
 
-let nama3 = nama.concat(nama2)
-let nama4 = nama2.concat(nama)
-let nama6 = nama.concat(nama2, nama5)
+// let nama3 = nama.concat(nama2)
+// let nama4 = nama2.concat(nama)
+// let nama6 = nama.concat(nama2, nama5)
 
 
-console.log(nama3);
-console.log(nama4);
-console.log(nama6);
+// console.log(nama3);
+// console.log(nama4);
+// console.log(nama6);
 
 
 
