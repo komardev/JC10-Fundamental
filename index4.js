@@ -84,7 +84,43 @@
 // objOne.propFour[0] // 12 
 // objOne.propTwo.subPropTwo(45) // 'Sub Property 45'
 
+// var hari = {
+//     pertama: "Senin",
+//     kedua: "Selasa",
+//     ketiga: "Rabu",
+//     keempat: "Kamis",
+//     kelima: "Jumat",
+//     keenam: "Sabtu"
+// }
+
+// console.log(hari.pertama);
+// console.log(hari['pertama']);
+
+// Loooping For In
+// namaProp akan berisi property yg ada di dalam object hari
+// for (var namaProp in hari){
+//     console.log(namaProp + ' : ' + hari[namaProp]);
+// }
 
 
+// Class , Template terbaru
+class MakhlukHidup {
+    constructor(place, hidup){
+        // Properties
+        this.tempatTinggal = place,
+        this.bernyawa = hidup
+    }
 
+    // Methods
+    makan(sesuatu) {
+        console.log('Sedang Makan ' + sesuatu)
+    }
 
+    bernafas() {
+        console.log('Sedang bernafas');
+    }
+}
+
+var simba = new MakhlukHidup('Bumi', true)
+console.log(simba);
+simba.makan('Cereal')
