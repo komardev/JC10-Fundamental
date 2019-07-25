@@ -104,152 +104,152 @@ Terakhir. Munculkan Rincian belanja, uang yg di bayar, berikut kembalian seperti
 
 // V1.2
 // V1.2
-var listMenu = (prdk, hrg) => {
-    var list = 'Selamat datang di PasarOnline\nDaftar Menu:\n'
-    for(let i = 0; i < prdk.length; i++){
-        list += `${i+1}. ${prdk[i]} @ Rp.${hrg[i]}\n`
-    }
+// var listMenu = (prdk, hrg) => {
+//     var list = 'Selamat datang di PasarOnline\nDaftar Menu:\n'
+//     for(let i = 0; i < prdk.length; i++){
+//         list += `${i+1}. ${prdk[i]} @ Rp.${hrg[i]}\n`
+//     }
 
-    return list
-}
+//     return list
+// }
 
-var listTotal = () => {
-    var strListTotal = "Total Belanja"
-    for(let i = 0; i < jumlah.length; i++){
-        if(jumlah[i] != null){
-            strListTotal += `\n${produk[i]}\n ${harga[i]} x ${jumlah[i]} = Rp. ${total[i]}`
-        }
-    }
+// var listTotal = () => {
+//     var strListTotal = "Total Belanja"
+//     for(let i = 0; i < jumlah.length; i++){
+//         if(jumlah[i] != null){
+//             strListTotal += `\n${produk[i]}\n ${harga[i]} x ${jumlah[i]} = Rp. ${total[i]}`
+//         }
+//     }
 
-    strListTotal += `
-    \n\nTotal Yang harus anda bayar adalah : Rp. ${totalBelanja}
-    \n\nMasukkan jumlah uang Anda :
-    `
+//     strListTotal += `
+//     \n\nTotal Yang harus anda bayar adalah : Rp. ${totalBelanja}
+//     \n\nMasukkan jumlah uang Anda :
+//     `
 
-    return strListTotal
-}
+//     return strListTotal
+// }
 
-var hitungTotal = (hrg, jmlh) => {
-    for(let i = 0; i < jmlh.length; i++){
-        if(jmlh[i] != null){
-            total[i] = hrg[i] * jmlh[i]
-            totalBelanja += total[i]
-        }
+// var hitungTotal = (hrg, jmlh) => {
+//     for(let i = 0; i < jmlh.length; i++){
+//         if(jmlh[i] != null){
+//             total[i] = hrg[i] * jmlh[i]
+//             totalBelanja += total[i]
+//         }
         
-    }
-}
+//     }
+// }
 
-var dataBelanja = () => {
-    var strDataBelanja = `Data Belanja`
-    for(let i = 0; i < jumlah.length;i++){
-        if(jumlah[i] != null){
-            strDataBelanja += `\n  ${produk[i]} x ${jumlah[i]} = Rp. ${total[i]}`
-        }
-    }
-    strDataBelanja += 
-    `
+// var dataBelanja = () => {
+//     var strDataBelanja = `Data Belanja`
+//     for(let i = 0; i < jumlah.length;i++){
+//         if(jumlah[i] != null){
+//             strDataBelanja += `\n  ${produk[i]} x ${jumlah[i]} = Rp. ${total[i]}`
+//         }
+//     }
+//     strDataBelanja += 
+//     `
 
-  Total belanja Rp.${totalBelanja}
-  Jumlah uang Rp.${uang}
-  Kembali Rp.${kembali}
+//   Total belanja Rp.${totalBelanja}
+//   Jumlah uang Rp.${uang}
+//   Kembali Rp.${kembali}
       
-  Terimakasih
-    `
+//   Terimakasih
+//     `
 
-    return strDataBelanja
-}
+//     return strDataBelanja
+// }
 
 
-var menu,
-produk  = ["Ayam", "Ikan", "Sapi", "Kuda", "Angsa"],
-harga   = [25000, 50000, 75000, 100000, 30000],
-    jumlah  = [],
-    total   = [],
-    totalBelanja = 0,
-    uang, uangKurang, kembali
+// var menu,
+// produk  = ["Ayam", "Ikan", "Sapi", "Kuda", "Angsa"],
+// harga   = [25000, 50000, 75000, 100000, 30000],
+//     jumlah  = [],
+//     total   = [],
+//     totalBelanja = 0,
+//     uang, uangKurang, kembali
 
-do {
-    do {
-        var check2 = false
-        menu = parseInt(
-            prompt(
-            listMenu(produk, harga)
-        )) - 1
-        if(!Number.isInteger(menu)){
-            alert("Mohon input sebuah angka")
-            check2 = true
-        } else if(menu < 0 || menu > (produk.length-1)){
-            alert(`Pilihan hanya ada 1 - ${produk.length}, Mohon input dengan benar`)
-            check2 = true;
-        }
-    } while (check2);
+// do {
+//     do {
+//         var check2 = false
+//         menu = parseInt(
+//             prompt(
+//             listMenu(produk, harga)
+//         )) - 1
+//         if(!Number.isInteger(menu)){
+//             alert("Mohon input sebuah angka")
+//             check2 = true
+//         } else if(menu < 0 || menu > (produk.length-1)){
+//             alert(`Pilihan hanya ada 1 - ${produk.length}, Mohon input dengan benar`)
+//             check2 = true;
+//         }
+//     } while (check2);
     
-    do {
-        var check3 = false;
-        if(jumlah[menu] == undefined){
-            jumlah[menu] = 0
-        }
-        jumlah[menu] += Math.abs(parseInt(prompt("Masukkan jumlah " + produk[menu]))) // perbaiki ini
-        if (!Number.isInteger(jumlah[menu])) {
-            alert("Mohon masukkah jumlah dengan angka")
-            check3 = true
-        }
-    } while (check3);
+//     do {
+//         var check3 = false;
+//         if(jumlah[menu] == undefined){
+//             jumlah[menu] = 0
+//         }
+//         jumlah[menu] += Math.abs(parseInt(prompt("Masukkan jumlah " + produk[menu]))) // perbaiki ini
+//         if (!Number.isInteger(jumlah[menu])) {
+//             alert("Mohon masukkah jumlah dengan angka")
+//             check3 = true
+//         }
+//     } while (check3);
     
     
-    var check = confirm("Ingin menambahkan belanjaan ?")
+//     var check = confirm("Ingin menambahkan belanjaan ?")
     
-} while (check);
+// } while (check);
 
 
-hitungTotal(harga, jumlah)
+// hitungTotal(harga, jumlah)
 
-mshKurang = false
-do {
-    var check5 = false
-    uang = Math.abs(
-        parseInt(
-            prompt(
-                listTotal()
-            )
-        )
-    )
-    if (!Number.isInteger(uang)) {
-        alert("Masukkan jumlah uang dalam format angka")
-        check5 = true
-    }
-} while (check5);
+// mshKurang = false
+// do {
+//     var check5 = false
+//     uang = Math.abs(
+//         parseInt(
+//             prompt(
+//                 listTotal()
+//             )
+//         )
+//     )
+//     if (!Number.isInteger(uang)) {
+//         alert("Masukkan jumlah uang dalam format angka")
+//         check5 = true
+//     }
+// } while (check5);
 
-if (uang < totalBelanja) {
-    var kurang = totalBelanja - uang
-    mshKurang = true
-    alert(
-        "Jumlah uang yang Anda masukkan kurang Rp. " + kurang +
-        "\nTotal Belanja Anda : Rp. " + totalBelanja +
-        "\nUang yang anda masukkan : Rp. " + uang
-    )
+// if (uang < totalBelanja) {
+//     var kurang = totalBelanja - uang
+//     mshKurang = true
+//     alert(
+//         "Jumlah uang yang Anda masukkan kurang Rp. " + kurang +
+//         "\nTotal Belanja Anda : Rp. " + totalBelanja +
+//         "\nUang yang anda masukkan : Rp. " + uang
+//     )
 
-    while (mshKurang) {
-        do {
-            var check4 = false
-            uangKurang = Math.abs(parseInt(prompt("Masukkan sisa pembayaran Rp." + kurang)))
-            if (!Number.isInteger(uangKurang)) {
-                alert("Mohon masukkan uang dalam format angka")
-                check4 = true
-            }
-        } while (check4);
-        if (uangKurang < kurang) {
-            alert("Jumlah pembayaran masih kurang")
-        } else {
-            uang += uangKurang
-            kembali = uang - totalBelanja
-            mshKurang = false;
-        }
-    }
-} else {
-    kembali = uang - totalBelanja
-}
+//     while (mshKurang) {
+//         do {
+//             var check4 = false
+//             uangKurang = Math.abs(parseInt(prompt("Masukkan sisa pembayaran Rp." + kurang)))
+//             if (!Number.isInteger(uangKurang)) {
+//                 alert("Mohon masukkan uang dalam format angka")
+//                 check4 = true
+//             }
+//         } while (check4);
+//         if (uangKurang < kurang) {
+//             alert("Jumlah pembayaran masih kurang")
+//         } else {
+//             uang += uangKurang
+//             kembali = uang - totalBelanja
+//             mshKurang = false;
+//         }
+//     }
+// } else {
+//     kembali = uang - totalBelanja
+// }
 
-console.log(
-    dataBelanja()
-);
+// console.log(
+//     dataBelanja()
+// );
