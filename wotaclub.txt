@@ -68,3 +68,18 @@ buah[2] = ceri
 
 
  
+ Manusia('Brew Master', 'Bumi', true, true , 'Lukisan')
+ super('Brew Master', 'Bumi', true,)
+
+constructor(nama, place, hidup){
+    // Properties
+    this.name = nama
+    this.tempatTinggal = place,
+    this.bernyawa = hidup
+}
+
+- name : 'Brew Master
+ - tempatTinggal: 'Bumi'
+ - bernyawa: true
+ - berakal : true
+ - berkarya: 'Lukisan'

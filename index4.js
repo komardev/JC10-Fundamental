@@ -105,22 +105,70 @@
 
 // Class , Template terbaru
 class MakhlukHidup {
-    constructor(place, hidup){
+    constructor(nama, place, hidup){
         // Properties
+        this.name = nama,
         this.tempatTinggal = place,
         this.bernyawa = hidup
     }
 
     // Methods
-    makan(sesuatu) {
-        console.log('Sedang Makan ' + sesuatu)
-    }
-
-    bernafas() {
-        console.log('Sedang bernafas');
-    }
+   bernafas() {
+       console.log('Sedang bernafas')
+   }
 }
 
-var simba = new MakhlukHidup('Bumi', true)
-console.log(simba);
-simba.makan('Cereal')
+class Manusia extends MakhlukHidup {
+    constructor(nama, place, hidup, akal,karya){
+        super(nama, place, hidup)
+        this.berakal = akal,
+        this.berkarya = karya
+    }
+    
+    bergerak(arah) {
+        console.log('Sedang bergerak ke ' + arah)
+    }
+
+    cariuang() {
+        console.log(this.name + ' sedang mencari uang ')
+    }
+
+}
+
+var brew = new Manusia('Brew Master', 'Bumi', true, true , 'Lukisan')
+// console.log(brew);
+brew.bernafas()
+brew.bergerak('Kanan')
+brew.cariuang()
+
+/*
+Manusia
+    - Tempat tinggal
+    - Bernyawa
+    - Akal
+    - Berkarya
+
+    - Bernafas
+    - Bergerak
+    - CariUang
+*/
+
+/*
+Hewan
+    - Tempat Tinggal
+    - Bernyawa
+    - Bersayap
+
+    - Bernafas
+    - Bergerak
+    - Berburu
+*/
+
+/*
+Tumbuhan
+    - Tempat Tinggal
+    - Bernyawa
+
+    - Fotosintesis
+    - Bernafas
+*/
