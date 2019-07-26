@@ -14,7 +14,7 @@ function hitung(a, b){
 
 // DESCENDING
 function hitung(a, b){
-    return  a - b
+    return  b - a
 }
 
 var angka = [12, 1, 20, 3, 27]
