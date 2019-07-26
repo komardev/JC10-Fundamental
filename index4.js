@@ -112,6 +112,7 @@ class MakhlukHidup {
         this.bernyawa = hidup
     }
 
+
     // Methods
    bernafas() {
        console.log('Sedang bernafas')
@@ -135,11 +136,11 @@ class Manusia extends MakhlukHidup {
 
 }
 
-var brew = new Manusia('Brew Master', 'Bumi', true, true , 'Lukisan')
+// var brew = new Manusia('Brew Master', 'Bumi', true, true , 'Lukisan')
 // console.log(brew);
-brew.bernafas()
-brew.bergerak('Kanan')
-brew.cariuang()
+// brew.bernafas()
+// brew.bergerak('Kanan')
+// brew.cariuang()
 
 /*
 Manusia
@@ -155,20 +156,51 @@ Manusia
 
 /*
 Hewan
-    - Tempat Tinggal
-    - Bernyawa
+                                        - Tempat Tinggal
+                                        - Bernyawa
     - Bersayap
 
-    - Bernafas
+                                        - Bernafas
     - Bergerak
     - Berburu
 */
+class Hewan extends MakhlukHidup {
+    constructor(hidup, place, nama , sayap){
+        super(nama, place, hidup)
+        this.bersayap = sayap
+    }
+
+    bergerak() {
+        console.log('Sedang bergerak saja');
+    }
+
+    berburu(buruan){
+        console.log(this.name + ' sedang memburu ' + buruan) ;
+    }
+}
+
+var harimau = new Hewan(true, 'Hutan', 'Simba', false)
+// console.log(harimau.name);
+// console.log(harimau.bersayap);
+// harimau.berburu('Ubur - ubur') // Simba sedang memburu Ubur - ubur
+
 
 /*
 Tumbuhan
-    - Tempat Tinggal
-    - Bernyawa
+                                        - Tempat Tinggal
+                                        - Bernyawa
 
     - Fotosintesis
-    - Bernafas
+                                        - Bernafas
 */
+
+class Tumbuhan extends MakhlukHidup {
+    constructor(nama, place, hidup){
+        super(nama, place, hidup)
+    }
+
+    fotosintesis() {
+        console.log(this.name + ' sedang berfotosintesis');
+        
+    }
+}
