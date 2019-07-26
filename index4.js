@@ -1,3 +1,27 @@
+// ARRAY SORT
+// Jika sort strings, cukup menjalankan function sort
+
+// Jika sorting numbers, maka hurs memberi input ke function 'sort' berupa function
+// function yang masuk harus return angka kurang dari nol atau sama dengan nol atau lebih besar dari nol
+var buah = ['Belimbing', 'Semangka', 'Apel', 'Salak']
+buah.sort()
+// console.log(buah);
+
+// ASCENDING
+function hitung(a, b){
+    return  a - b
+}
+
+// DESCENDING
+function hitung(a, b){
+    return  a - b
+}
+
+var angka = [12, 1, 20, 3, 27]
+angka.sort(hitung)
+console.log(angka);
+
+
 // OBJECT
 // Mampu menyimpan banyak data seperti array
 // Jika pada array menggunakan index, menggunakan key
@@ -104,37 +128,37 @@
 
 
 // Class , Template terbaru
-class MakhlukHidup {
-    constructor(nama, place, hidup){
-        // Properties
-        this.name = nama,
-        this.tempatTinggal = place,
-        this.bernyawa = hidup
-    }
+// class MakhlukHidup {
+//     constructor(nama, place, hidup){
+//         // Properties
+//         this.name = nama,
+//         this.tempatTinggal = place,
+//         this.bernyawa = hidup
+//     }
 
 
-    // Methods
-   bernafas() {
-       console.log('Sedang bernafas')
-   }
-}
+//     // Methods
+//    bernafas() {
+//        console.log('Sedang bernafas')
+//    }
+// }
 
-class Manusia extends MakhlukHidup {
-    constructor(nama, place, hidup, akal,karya){
-        super(nama, place, hidup)
-        this.berakal = akal,
-        this.berkarya = karya
-    }
+// class Manusia extends MakhlukHidup {
+//     constructor(nama, place, hidup, akal,karya){
+//         super(nama, place, hidup)
+//         this.berakal = akal,
+//         this.berkarya = karya
+//     }
     
-    bergerak(arah) {
-        console.log('Sedang bergerak ke ' + arah)
-    }
+//     bergerak(arah) {
+//         console.log('Sedang bergerak ke ' + arah)
+//     }
 
-    cariuang() {
-        console.log(this.name + ' sedang mencari uang ')
-    }
+//     cariuang() {
+//         console.log(this.name + ' sedang mencari uang ')
+//     }
 
-}
+// }
 
 // var brew = new Manusia('Brew Master', 'Bumi', true, true , 'Lukisan')
 // console.log(brew);
@@ -164,22 +188,22 @@ Hewan
     - Bergerak
     - Berburu
 */
-class Hewan extends MakhlukHidup {
-    constructor(hidup, place, nama , sayap){
-        super(nama, place, hidup)
-        this.bersayap = sayap
-    }
+// class Hewan extends MakhlukHidup {
+//     constructor(hidup, place, nama , sayap){
+//         super(nama, place, hidup)
+//         this.bersayap = sayap
+//     }
 
-    bergerak() {
-        console.log('Sedang bergerak saja');
-    }
+//     bergerak() {
+//         console.log('Sedang bergerak saja');
+//     }
 
-    berburu(buruan){
-        console.log(this.name + ' sedang memburu ' + buruan) ;
-    }
-}
+//     berburu(buruan){
+//         console.log(this.name + ' sedang memburu ' + buruan) ;
+//     }
+// }
 
-var harimau = new Hewan(true, 'Hutan', 'Simba', false)
+// var harimau = new Hewan(true, 'Hutan', 'Simba', false)
 // console.log(harimau.name);
 // console.log(harimau.bersayap);
 // harimau.berburu('Ubur - ubur') // Simba sedang memburu Ubur - ubur
@@ -194,13 +218,16 @@ Tumbuhan
                                         - Bernafas
 */
 
-class Tumbuhan extends MakhlukHidup {
-    constructor(nama, place, hidup){
-        super(nama, place, hidup)
-    }
+// class Tumbuhan extends Hewan {
+//     constructor(nama, place, hidup, sayap){
+//         super(nama, place, hidup, sayap)
+//     }
 
-    fotosintesis() {
-        console.log(this.name + ' sedang berfotosintesis');
+//     fotosintesis() {
+//         console.log(this.name + ' sedang berfotosintesis');
         
-    }
-}
+//     }
+// }
+
+// var arnoldi = new Tumbuhan('Raflesia', 'Hutan', true, false)
+// console.log(arnoldi);
