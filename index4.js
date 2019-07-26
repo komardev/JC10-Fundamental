@@ -3,8 +3,8 @@
 
 // Jika sorting numbers, maka hurs memberi input ke function 'sort' berupa function
 // function yang masuk harus return angka kurang dari nol atau sama dengan nol atau lebih besar dari nol
-var buah = ['Belimbing', 'Semangka', 'Apel', 'Salak']
-buah.sort()
+// var buah = ['Belimbing', 'Semangka', 'Apel', 'Salak']
+// buah.sort()
 // console.log(buah);
 
 // ASCENDING
@@ -13,14 +13,50 @@ function hitung(a, b){
 }
 
 // DESCENDING
-function hitung(a, b){
-    return  b - a
+// function hitung(a, b){
+//     return  b - a
+// }
+
+// var angka = [12, 1, 20, 3, 27]
+// angka.sort(hitung)
+// console.log(angka);
+
+var list = [
+    {name: 'Elisa', age: 32},
+    {name: 'Sunhe', age: 27},
+    {name: 'Hansol', age: 24},
+    {name: 'Rudi', age: 19},
+    {name: 'Alex', age: 45}
+]
+
+
+// Sort dari remdah ke terbesar berdasarkan umur
+function umur(a, b){
+    // object.property
+    //  a = {name: 'Elisa', age: 32}
+    //  b = {name: 'Sunhe', age: 27},
+    a.age // 32
+    b.age // 27
+
+    return a.age - b.age
 }
 
-var angka = [12, 1, 20, 3, 27]
-angka.sort(hitung)
-console.log(angka);
+list.sort(umur)
+console.log(list);
 
+// Sort rendah ke besar berdasarkan nama
+function name(a, b){
+    if(a.name < b.name){
+        return -1
+    } else if(a.name > b.name){
+        return 1
+    } else {
+        return 0
+    }
+}
+
+list.sort(name)
+console.log(list);
 
 // OBJECT
 // Mampu menyimpan banyak data seperti array
