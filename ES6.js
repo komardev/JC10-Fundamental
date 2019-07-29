@@ -145,12 +145,18 @@ LET & CONST
 // console.log(ganjil)
 // console.log(genap)
 let number = [12,13,14,15]
-
+           
 let funFilter = (array, fun) => {
-    var arrayBaru = []
+    var arrayBaru = [12, 13]
+
+    // array = [12,13,14,15]
+    // fun = (1) => {return 15 < 14} / (element) => {return element < 14}
+    // i = 4       array.length = 4   element = array[i]
 
     for(var i = 0; i < array.length; i++){
-        var res = fun(array[i]) // true or false
+        // array[3] = 15
+        var res = fun(array[i]) // false 
+        // res = false
 
         if(res){
             arrayBaru.push(array[i])
@@ -162,10 +168,11 @@ let funFilter = (array, fun) => {
 
 var kurang = (element) => {return element < 14}
 var genap = (element) => {return element % 2 == 0}
+var ganjil = (element) => {return element % 2 == 1}
 
-let end = funFilter(number, kurang)
-let endGenap = funFilter(number, genap)
+let end = funFilter(number, kurang) // [12,13]
+let endGenap = funFilter(number, genap) // [12,13]
+let endGanjil = funFilter(number, ganjil) // [12,13]
 
-console.log(number)
-console.log(end)
 console.log(endGenap)
+console.log(endGanjil)
