@@ -93,25 +93,55 @@ LET & CONST
 
 // ARROW FUNCTION
 // Hilangkan keyword 'function', tambahkan '=>'
-var sayHello = (name) => {
-    console.log(`Hello ${name}`)
-}
+// var sayHello = (name) => {
+//     console.log(`Hello ${name}`)
+// }
 
 // Hapus kurung kurawal jika kode yg dijalankan singkat
-var sayHai = (name) => console.log(name)
+// var sayHai = (name) => console.log(name)
 
-var renumb = (angka, number) => {
-    return angka * number
-}
+// var renumb = (angka, number) => {
+//     return angka * number
+// }
 // hapus kurung kurawal dan return
-var renumb = (angka, number) => angka * number
+// var renumb = (angka, number) => angka * number
 
-var retangka = (angka) => {
-    return angka * 2
-}
+// var retangka = (angka) => {
+//     return angka * 2
+// }
 // hapus kurung kurawal , return, kurung di parameter
-var retangka = angka => angka * 2
+// var retangka = angka => angka * 2
 
 
-sayHello('Maverick')
-sayHai('Rudolf')
+// sayHello('Maverick')
+// sayHai('Rudolf')
+
+
+
+// ARRAY FILTERING
+/*
+ - filter() menerima satu input berupa function (callback)
+ - callback function menerima satu input berupa data dari array
+ - callback function HARUS return TRUE atau FALSE
+ - jika return TRUE, data akan tetep ada, jika FALSE akan menghilang
+ - filter() me return array baru
+*/
+let angka = [0, 1, 2, 3, 4, 5]
+
+let hasil = angka.filter(
+    (element) => {return element < 3}
+)
+
+let ganjil = angka.filter(
+    (element) => {return element % 2 == 1}
+)
+
+let genap = angka.filter(
+    (element) => {return element % 2 == 0}
+)
+
+console.log(angka); // [ 0, 1, 2, 3, 4, 5 ]
+console.log(hasil); // [ 0, 1, 2 ]
+console.log(ganjil)
+console.log(genap)
+
