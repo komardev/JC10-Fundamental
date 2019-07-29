@@ -126,22 +126,46 @@ LET & CONST
  - jika return TRUE, data akan tetep ada, jika FALSE akan menghilang
  - filter() me return array baru
 */
-let angka = [0, 1, 2, 3, 4, 5]
+// let angka = [12, 13, 14, 15]
 
-let hasil = angka.filter(
-    (element) => {return element < 3}
-)
+// let hasil = angka.filter(
+//     (element) => {return element < 3}
+// )
 
-let ganjil = angka.filter(
-    (element) => {return element % 2 == 1}
-)
+// let ganjil = angka.filter(
+//     (element) => {return element % 2 == 1}
+// )
 
-let genap = angka.filter(
-    (element) => {return element % 2 == 0}
-)
+// let genap = angka.filter(
+//     (element) => {return element % 2 == 0}
+// )
 
-console.log(angka); // [ 0, 1, 2, 3, 4, 5 ]
-console.log(hasil); // [ 0, 1, 2 ]
-console.log(ganjil)
-console.log(genap)
+// console.log(angka); // [ 0, 1, 2, 3, 4, 5 ]
+// console.log(hasil); // [ 0, 1, 2 ]
+// console.log(ganjil)
+// console.log(genap)
+let number = [12,13,14,15]
 
+let funFilter = (array, fun) => {
+    var arrayBaru = []
+
+    for(var i = 0; i < array.length; i++){
+        var res = fun(array[i]) // true or false
+
+        if(res){
+            arrayBaru.push(array[i])
+        }
+    }
+
+    return arrayBaru
+}
+
+var kurang = (element) => {return element < 14}
+var genap = (element) => {return element % 2 == 0}
+
+let end = funFilter(number, kurang)
+let endGenap = funFilter(number, genap)
+
+console.log(number)
+console.log(end)
+console.log(endGenap)

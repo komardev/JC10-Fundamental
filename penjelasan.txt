@@ -105,7 +105,7 @@ return > 0
 
 angka = [0, 1, 2, 3, 4, 5]
 
-element = 4
+element = 0
 
 element < 3
 FALSE
