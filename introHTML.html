@@ -5,12 +5,13 @@
         <title>INTRO HTML</title>
         <style>
             table, td, th {
-                border: 1px solid black;
+                border: 5px solid rgb(129, 209, 205);
                 border-collapse: collapse;
             }
 
             table {
-                width: 30%
+                width: 30%;
+                margin-bottom: 80px
             }
 
             td {
@@ -19,6 +20,7 @@
 
 
         </style>
+        
     </head>
     <body>
         <!-- HEADING -->
@@ -144,7 +146,54 @@
             </tr>
         </table>
 
+        <!-- Exercise -->
 
+
+        <!-- PDF 7.HTML + Javascript -->
+        <!-- tag, attribute -->
+        <form>
+            <p>
+                Nama: <input type="text" id="nama">
+            </p>
+            <p>
+                Usia: <input type="number" id="usia">
+            </p>
+            <p>
+                Gender :
+                <input type="radio" name="gender" value="Laki-laki"> Pria
+                <input type="radio" name="gender" value="Perempuan"> Wanita
+            </p>
+            <p>
+                Job:
+                <select>
+                    <option value="GURU">Guru</option>
+                    <option value="CEO">CEO</option>
+                    <option value="SENIMAN">Seniman</option>
+                </select>
+            </p>
+            <p>
+                Skill:
+                <input type="checkbox" value='HTML 5'> HTML
+                <input type="checkbox" value="CSS 3"> CSS
+                <input type="checkbox" value="JAVASCRIPT"> Javascript
+            </p>
+        </form>
+
+        <button onclick="myfunction()" >Submit</button>
+
+        <p id="disini">
+            Hasil
+        </p>
+
+
+
+
+
+
+
+
+
+        <script src="./IntroHTML.js"></script>
 
 
 
