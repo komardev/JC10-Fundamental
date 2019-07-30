@@ -200,7 +200,6 @@ let hasilObj = angka.map((item)=>{
 
 let hasilStr = hasilObj.map((obj)=>{
     return obj.hari + ', ' + obj.angka
-    return 
 })
 
 console.log(angka);
