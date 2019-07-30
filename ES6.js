@@ -144,35 +144,67 @@ LET & CONST
 // console.log(hasil); // [ 0, 1, 2 ]
 // console.log(ganjil)
 // console.log(genap)
-let number = [12,13,14,15]
+// let number = [12,13,14,15]
            
-let funFilter = (array, fun) => {
-    var arrayBaru = [12, 13]
+// let funFilter = (array, fun) => {
+//     var arrayBaru = [12, 13]
 
     // array = [12,13,14,15]
     // fun = (1) => {return 15 < 14} / (element) => {return element < 14}
     // i = 4       array.length = 4   element = array[i]
 
-    for(var i = 0; i < array.length; i++){
+    // for(var i = 0; i < array.length; i++){
         // array[3] = 15
-        var res = fun(array[i]) // false 
+        // var res = fun(array[i]) // false 
         // res = false
 
-        if(res){
-            arrayBaru.push(array[i])
-        }
-    }
+        // if(res){
+            // arrayBaru.push(array[i])
+        // }
+    // }
 
-    return arrayBaru
-}
+    // return arrayBaru
+// }
+// var kurang = (element) => {return element < 14}
+// var genap = (element) => {return element % 2 == 0}
+// var ganjil = (element) => {return element % 2 == 1}
 
-var kurang = (element) => {return element < 14}
-var genap = (element) => {return element % 2 == 0}
-var ganjil = (element) => {return element % 2 == 1}
+// let end = funFilter(number, kurang) // [12,13]
+// let endGenap = funFilter(number, genap) // [12,13]
+// let endGanjil = funFilter(number, ganjil) // [12,13]
 
-let end = funFilter(number, kurang) // [12,13]
-let endGenap = funFilter(number, genap) // [12,13]
-let endGanjil = funFilter(number, ganjil) // [12,13]
+// console.log(endGenap)
+// console.log(endGanjil)
 
-console.log(endGenap)
-console.log(endGanjil)
+// MAP ARRAY
+/*
+- map() function yang menerima input berupa function (callback)
+- callback function menerima input berupa element pada array
+- map() akan mereturn array baru
+- map() akan mengubah bentuk suatu data ke bentuk lainnya
+*/
+
+let angka = [2, 7, 3, 9, 12]
+
+let hasil = angka.map((element) => {
+    return element * 2
+})
+
+let hasilBoolean = angka.map((number) => {
+    return number < 8
+})
+
+let hasilObj = angka.map((item)=>{
+    return {hari: 'Selasa', angka: item}
+})
+
+let hasilStr = hasilObj.map((obj)=>{
+    return obj.hari + ' ' + obj.angka
+})
+
+console.log(angka);
+console.log(hasilObj);
+console.log(hasilStr);
+
+
+

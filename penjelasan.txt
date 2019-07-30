@@ -113,5 +113,17 @@ FALSE
 return [0, 1, 2]
 
 
+angka = [2, 7, 3, 9, 12]
 
+(3) => {return 3 * 2}
+(element) => {return element * 2}
 
+hasil = [4, 14 , 18, 24]
+
+----------
+angka = [2, 7, 3, 9, 12]
+
+(12) => {return 12 < 8}
+(number) => {return number < 8}
+
+hasilBoolean [true, true, ...,false]
