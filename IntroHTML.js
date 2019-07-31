@@ -16,8 +16,12 @@ let myfunction = () => {
     let skillFull = ''
 
     for(var i = 0; i < skill.length; i++){
-        skillFull += skill[i].value
+        skillFull += ` ${skill[i].value},`
     }
+
+    // menghilangkan koma di akhir
+    skillFull = skillFull.slice(0, -1)
+    // HTML5, CSS 3, Javascript,
 
     let p = document.getElementById('disini')
     p.innerHTML = `Nama: ${nama.value} <br> 
