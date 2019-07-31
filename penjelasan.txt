@@ -127,3 +127,17 @@ angka = [2, 7, 3, 9, 12]
 (number) => {return number < 8}
 
 hasilBoolean [true, true, ...,false]
+
+
+skill = [input, input, input]
+
+-- data yang di cari ada di property value, input.value
+-- skill.length = banyaknya tag input di array 'skill'
+
+let skillFull = 'HTML 5CSS 3JAVASCRIPT'
+
+i = 2 , skill[2].value = JAVASCRIPT
+
+for(var i = 0; i < skill.length; i++){
+    skillFull += skill[i].value
+}

@@ -11,8 +11,21 @@ let myfunction = () => {
     let gender = document.querySelector('input[name=gender]:checked')
     let job = document.getElementById('pekerjaan')
 
+    // skill berisi array, akan di loop untuk di ambil valuenya
+    let skill = document.querySelectorAll('input[name=skill]:checked')
+    let skillFull = ''
+
+    for(var i = 0; i < skill.length; i++){
+        skillFull += skill[i].value
+    }
+
+    console.log(skillFull);
     
-    let p = document.getElementById('disini')
-    p.innerHTML = `Nama: ${nama.value}, Usia: ${usia.value}, Gender: ${gender.value}, Job: ${job.value}`
+    
+    // let p = document.getElementById('disini')
+    // p.innerHTML = `Nama: ${nama.value} <br> 
+    // Usia: ${usia.value} <br>
+    // Gender: ${gender.value} <br>
+    // Job: ${job.value}`
 
 }
