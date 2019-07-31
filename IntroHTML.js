@@ -19,13 +19,11 @@ let myfunction = () => {
         skillFull += skill[i].value
     }
 
-    console.log(skillFull);
-    
-    
-    // let p = document.getElementById('disini')
-    // p.innerHTML = `Nama: ${nama.value} <br> 
-    // Usia: ${usia.value} <br>
-    // Gender: ${gender.value} <br>
-    // Job: ${job.value}`
+    let p = document.getElementById('disini')
+    p.innerHTML = `Nama: ${nama.value} <br> 
+    Usia: ${usia.value} <br>
+    Gender: ${gender.value} <br>
+    Job: ${job.value} <br>
+    Skill: ${skillFull}`
 
 }
