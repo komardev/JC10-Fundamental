@@ -35,14 +35,29 @@ let funInputData = () => {
   funShow(arrManusia);
 };
 
+// delete
+let remove = (removeIndex) => {
+  delete arrManusia[removeIndex]
+
+  funShow(arrManusia)
+}
+
+// filter
+// let remove = (removeIndex) => {
+//   delete arrManusia[removeIndex]
+
+//   funShow(arrManusia)
+// }
+
 // RENDER LIST
 let funShow = (arrey) => {
-  let listManusia = arrey.map(val => {
+  let listManusia = arrey.map((val, index) => {
     // val = {name, age, job}
     return `<tr>
             <td>${val.nama}</td>
             <td>${val.umur}</td>
             <td>${val.job}</td>
+            <td><input type="button" value="Delete" onclick="remove(${index})"></td>
         </tr>`;
   });
 
@@ -82,7 +97,7 @@ let funFilterUmur = () => {
     // num2 = max
     let num2 = document.getElementById('num2').value
 
-    let hasilFilterUmur = []
+    let hasilFilterUmur = arrManusia
 
     // Masuk ke if jika kedua text box ter isi
     if(!(num1 == '' || num2 == '')){
