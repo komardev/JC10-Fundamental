@@ -86,7 +86,7 @@ let funFilterUmur = () => {
 
     // Masuk ke if jika kedua text box ter isi
     if(!(num1 == '' || num2 == '')){
-        list = arrManusia.filter((val) => {
+        hasilFilterUmur = arrManusia.filter((val) => {
             return (val.umur >= num1 && val.umur <= num2)
         })
     }
@@ -104,10 +104,10 @@ let funFilterJob = () => {
 
   // Jika user memilih 'All' , maka 'list' akan berisi semua data manusia
   if(selectedJob == 'All'){
-    list = arrManusia
+    hasilFilterJob = arrManusia
   } else {
   // Array manusia di filter berdasarkan option yg dipilih, hasil filter akan disimpan di 'list'
-    list = arrManusia.filter((val) => {
+    hasilFilterJob = arrManusia.filter((val) => {
       return val.job == selectedJob
    })
   }
