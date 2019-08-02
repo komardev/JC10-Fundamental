@@ -32,12 +32,12 @@ let funInputData = () => {
       arrJob.push(job)
   }
 
-  funShow();
+  funShow(arrManusia);
 };
 
 // RENDER LIST
-let funShow = () => {
-  let listManusia = arrManusia.map(val => {
+let funShow = (arrey) => {
+  let listManusia = arrey.map(val => {
     // val = {name, age, job}
     return `<tr>
             <td>${val.nama}</td>
@@ -61,7 +61,7 @@ let funFilterName = () => {
     let filter = document.getElementById('search').value
 
     // Filtering
-    let hasilFilter = arrManusia.filter((val) => { // val = {nama, age, job}
+    let hasilFilterName = arrManusia.filter((val) => { // val = {nama, age, job}
         // kecilkan semua huruf nama
         let namaLow = val.nama.toLowerCase()
         // kecilkan semua karakter yang di ketik user
@@ -71,16 +71,7 @@ let funFilterName = () => {
     })
     
     // Render list
-    let list = hasilFilter.map((val) => {
-        return `<tr>
-            <td>${val.nama}</td>
-            <td>${val.umur}</td>
-            <td>${val.job}</td>
-        </tr>`
-    })
-
-    // Munculkan hasil render
-    document.getElementById('here').innerHTML = list.join('')
+    funShow(hasilFilterName)
 
 }
 
@@ -91,31 +82,43 @@ let funFilterUmur = () => {
     // num2 = max
     let num2 = document.getElementById('num2').value
 
-    let list
+    let hasilFilterUmur = []
 
+    // Masuk ke if jika kedua text box ter isi
     if(!(num1 == '' || num2 == '')){
         list = arrManusia.filter((val) => {
             return (val.umur >= num1 && val.umur <= num2)
         })
     }
 
-    list = list.map(val => {
-        return `<tr>
-        <td>${val.nama}</td>
-        <td>${val.umur}</td>
-        <td>${val.job}</td>
-        </tr>`
-    })
-
-    document.getElementById('here').innerHTML = list.join('')
+    funShow(hasilFilterUmur)
 
 }
 
 // FILTER JOB
 
-funShow();
+let funFilterJob = () => {
+  // Mengambil value dari option yg di pilih oleh user
+  let selectedJob = document.getElementById('job').value
+  let hasilFilterJob
 
+  // Jika user memilih 'All' , maka 'list' akan berisi semua data manusia
+  if(selectedJob == 'All'){
+    list = arrManusia
+  } else {
+  // Array manusia di filter berdasarkan option yg dipilih, hasil filter akan disimpan di 'list'
+    list = arrManusia.filter((val) => {
+      return val.job == selectedJob
+   })
+  }
 
+  // list adalah array yang berisi banyak object,
+  // tiap object pada 'list' akan di ubah menjadi bentuk tag <tr> untuk kemudian di render
+  funShow(hasilFilterJob)
+
+}
+
+funShow(arrManusia);
 
 /*
 onClick = event handler
