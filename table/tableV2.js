@@ -35,16 +35,18 @@ let funInputData = () => {
   funShow(arrManusia);
 };
 
-// delete
 let remove = (removeIndex) => {
   delete arrManusia[removeIndex]
 
   funShow(arrManusia)
 }
 
-// filter
 // let remove = (removeIndex) => {
-//   delete arrManusia[removeIndex]
+//   let hasilRemove = arrManusia.filter((val, index) => {
+//     return index != removeIndex
+//   })
+
+//   arrManusia = hasilRemove
 
 //   funShow(arrManusia)
 // }
