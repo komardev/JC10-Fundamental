@@ -116,3 +116,22 @@
 // let hasilString = users.map((item) => {
 //     return `${item.name}`
 // })
+
+// Filtering Array
+// filter() untuk memilih mana data yang akan tetap ada, mana yang akan dihilangkan
+// return true : tetap ada
+// return false : dihilangkan
+
+let numbers = [23, 12, 35, 56, 79]
+
+// filtering angka genap
+let hasilGenap = numbers.filter((angka) => {
+    return angka % 2 == 0
+})
+
+// filtering angka ganjil
+let hasilGanjil = numbers.filter((angka) => {
+    return angka % 2 == 1
+})
+console.log(hasilGenap);
+console.log(hasilGanjil);
