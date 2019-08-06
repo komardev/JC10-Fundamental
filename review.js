@@ -122,16 +122,77 @@
 // return true : tetap ada
 // return false : dihilangkan
 
-let numbers = [23, 12, 35, 56, 79]
+// let numbers = [23, 12, 35, 56, 79]
 
 // filtering angka genap
-let hasilGenap = numbers.filter((angka) => {
-    return angka % 2 == 0
-})
+// let hasilGenap = numbers.filter((angka) => {
+//     return angka % 2 == 0
+// })
 
 // filtering angka ganjil
-let hasilGanjil = numbers.filter((angka) => {
-    return angka % 2 == 1
+// let hasilGanjil = numbers.filter((angka) => {
+//     return angka % 2 == 1
+// })
+// console.log(hasilGenap);
+// console.log(hasilGanjil);
+
+
+// sort
+// ASCENDING / ASC / rendah ke besar (A - Z) (1 - 9)
+// DESCENDING / DSC / besar ke rendah (z - A) (9 - 1)
+
+// callback function pada sort akan menerima dua input
+// callback function harus return nilai < 0 atau nilai > 0 atau nilai == 0
+
+// return < 0 , 'a' memiliki index yang lebih kecil dari 'b'
+// return 0, tidak ada perubahan posisi
+// return > 0, 'b' memiliki index yang lebih kecil dari 'a'
+
+var name = ['Tony', 'Peter', 'Bruce', 'Thor', 'Loki']
+
+var number = [3, 17, 9 , 12, 10]
+
+console.log(number)
+// ASC
+number.sort((a, b) => {
+    return a - b
 })
-console.log(hasilGenap);
-console.log(hasilGanjil);
+
+console.log(number)
+// DSC
+number.sort((a, b) => {
+    return b - a
+})
+
+console.log(number)
+/*
+[20, 10]
+
+[14, 32]
+
+a : 14
+b : 32
+(14, 32 ) => {
+    a - b = -18
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
