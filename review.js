@@ -148,18 +148,29 @@
 // return 0, tidak ada perubahan posisi
 // return > 0, 'b' memiliki index yang lebih kecil dari 'a'
 
+// return true, posisi 'a' dan 'b' bertukar
+// return false, posisi 'a' dan 'b' tidak di tukar
+
 var name = ['Tony', 'Peter', 'Bruce', 'Thor', 'Loki']
 
 var number = [3, 17, 9 , 12, 10]
 
 console.log(number)
-// ASC
+// ASC 1
+number.sort((a, b) => {
+    return a > b
+})
+// ASC 2
 number.sort((a, b) => {
     return a - b
 })
 
 console.log(number)
-// DSC
+// DSC 1
+number.sort((a, b) => {
+    return a < b
+})
+// DSC 2
 number.sort((a, b) => {
     return b - a
 })
